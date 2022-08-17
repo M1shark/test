@@ -238,3 +238,105 @@
   color: var(--dark-color);
   margin-top: 60px;
 }
+
+.experience {
+  padding: 80px 0;
+  background: url(../img/experience/experience.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+.experience::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 315px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.6)));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+  z-index: 1;
+}
+.experience__header {
+  z-index: 4;
+}
+.experience__header h2 {
+  margin: 0;
+  font-family: "Gotham-Light";
+  font-size: calc(30px + 10 * ((100vw - 320px) / 1180));
+  text-transform: uppercase;
+  color: var(--red-color);
+  margin-bottom: 20px;
+}
+.experience__header h2 span {
+  font-family: "Gotham-Bold";
+  font-size: calc(30px + 10 * ((100vw - 320px) / 1180));
+  color: var(--red-color);
+}
+.experience__header p {
+  margin: 0;
+  font-family: "Gotham-light";
+  font-size: calc(13px + 1 * ((100vw - 320px) / 1180));
+  color: var(--white-color);
+}
+.experience__descr {
+  z-index: 4;
+  margin-top: 250px;
+}
+.experience__descr h4 {
+  font-family: "GothamNarrSSm-BookItalic";
+  font-size: calc(15px + 5 * ((100vw - 320px) / 1180));
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--white-color);
+  margin-bottom: 40px;
+}
+.experience__descr button {
+  font-family: "Gotham-Book";
+  font-size: calc(15px + 5 * ((100vw - 320px) / 1180));
+  font-weight: 400;
+  line-height: normal;
+  color: var(--white-color);
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ee2255;
+  padding: 22px 74px;
+}
+
+.wherefore {
+  padding: 80px 0;
+}
+.wherefore__title {
+  margin: 0;
+  font-family: "Gotham-Light";
+  font-size: calc(30px + 10 * ((100vw - 320px) / 1180));
+  text-transform: uppercase;
+  color: var(--red-color);
+  margin-bottom: 20px;
+}
+.wherefore__title span {
+  font-family: "Gotham-Bold";
+  font-size: calc(30px + 10 * ((100vw - 320px) / 1180));
+  color: var(--red-color);
+}
+.wherefore__row {
+  margin-top: 60px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 792px) {
+  .wherefore__row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 40px;
+  }
+}
+.wherefore__row-item {
+  font-family: "Gotham-Book";
+  font-size: calc(15px + 3 * ((100vw - 320px) / 1180));
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 30px;
+  color: var(--dark-color);
+}

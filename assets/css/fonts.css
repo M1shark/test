@@ -32,7 +32,7 @@
 
 @font-face {
     font-family: "GothamNarrSSm-BookItalic";
-    src: url("../fonts/Gotham-Bold.woff2");
+    src: url("../fonts/GothamNarrSSm-BookItalic.woff2");
     src: local("☺"), url("../fonts/GothamNarrSSm-BookItalic.woff") format("woff2"), url("../fonts/GothamNarrSSm-BookItalic.ttf") format("truetype"), url("../fonts/GothamNarrSSm-BookItalic.svg") format("svg");
     font-weight: 400;
     font-style: normal;
