@@ -18,16 +18,16 @@
             <a href="#"><img src="assets/img/logo.svg" alt="logo" /></a>
             <ul class="header__menu">
                 <li class="header__list">
-                    <a href="#" class="header__item">Discover </a>
+                    <a href="#discover" class="header__item">Discover </a>
                 </li>
                 <li class="header__list">
-                    <a href="#" class="header__item">Experience </a>
+                    <a href="#experience" class="header__item">Experience </a>
                 </li>
                 <li class="header__list">
-                    <a href="#" class="header__item">Travel guides</a>
+                    <a href="#wherefore" class="header__item">Travel guides</a>
                 </li>
                 <li class="header__list">
-                    <a href="#" class="header__item">About </a>
+                    <a href="#about" class="header__item">About </a>
                 </li>
             </ul>
             <div class="header__burger">
@@ -36,7 +36,7 @@
         </div>
     </header>
     <main class="main">
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="hero__slider">
                 <div class="hero__slider-wrapper">
                     <img src="assets/img/slider-img1.jpg" alt="" />
@@ -68,7 +68,7 @@
                 </div>
             </div>
         </section>
-        <section class="discover">
+        <section class="discover" id="discover">
             <div class="grid-container discover__container">
                 <h2 class="discover__title"> discover <span>tahiti</span> </h2>
                 <p class="discover__sub-title">
@@ -131,10 +131,24 @@
                 <div class="discover__sentence text-center">
                     Discover all Tahiti has to offer.
                 </div>
-                <div class="select"> </div>
+                <div class="discover__search grid-x">
+                    <div class="cell large-8 discover__search-content">
+                        <div class="select">
+                            <input class="select__input" type="hidden" name="" />
+                            <div class="select__head">Select an island</div>
+                            <ul class="select__list" style="display: none">
+                                <li class="select__item">BORA BORA </li>
+                                <li class="select__item">Moorea</li>
+                                <li class="select__item">Ra'iātea</li>
+                                <li class="select__item">Taha’a</li>
+                            </ul>
+                        </div>
+                        <button class="discover__search-btn"> Explore </button>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="experience">
+        <section class="experience" id="experience">
             <div class="grid-container">
                 <div class="grid-x">
                     <div class="cell large-4 experience__header">
@@ -152,7 +166,7 @@
                 </div>
             </div>
         </section>
-        <section class="wherefore">
+        <section class="wherefore" id="wherefore">
             <div class="grid-container">
                 <h2 class="wherefore__title text-center"> Why <span>tahiti?</span></h2>
                 <div class="grid-x wherefore__row">
@@ -166,7 +180,7 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="grid-container">
                 <div class="grid-x about__desc">
                     <div class="cell large-9 about__text">
