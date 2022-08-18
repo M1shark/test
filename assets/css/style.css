@@ -38,6 +38,8 @@
   font-size: calc(15px + 3 * ((100vw - 320px) / 1180));
   font-weight: 400;
   text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   color: var(--red-color);
 }
 .header__burger {
@@ -135,13 +137,17 @@
   z-index: 2;
 }
 .discover__title {
-  font-family: "Gotham-Light";
+  font-family: "Gotham-Bold";
   font-size: calc(30px + 10 * ((100vw - 320px) / 1180));
+  font-weight: 700;
   text-transform: uppercase;
   color: var(--green-color);
 }
 .discover__title span {
-  font-family: "Gotham-Bold";
+  font-family: "Gotham-Book";
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
   font-size: calc(30px + 10 * ((100vw - 320px) / 1180));
   color: var(--green-color);
 }
@@ -261,22 +267,25 @@
 }
 .experience__header h2 {
   margin: 0;
-  font-family: "Gotham-Light";
+  font-family: "Gotham-Bold";
   font-size: calc(30px + 10 * ((100vw - 320px) / 1180));
+  font-weight: 700;
   text-transform: uppercase;
   color: var(--red-color);
   margin-bottom: 20px;
 }
 .experience__header h2 span {
-  font-family: "Gotham-Bold";
+  font-family: "Gotham-Book";
   font-size: calc(30px + 10 * ((100vw - 320px) / 1180));
-  color: var(--red-color);
+  font-weight: 400;
 }
 .experience__header p {
   margin: 0;
   font-family: "Gotham-light";
   font-size: calc(13px + 1 * ((100vw - 320px) / 1180));
+  font-weight: 300;
   color: var(--white-color);
+  opacity: 0.9;
 }
 .experience__descr {
   z-index: 4;
@@ -307,16 +316,18 @@
 }
 .wherefore__title {
   margin: 0;
-  font-family: "Gotham-Light";
-  font-size: calc(30px + 10 * ((100vw - 320px) / 1180));
-  text-transform: uppercase;
-  color: var(--red-color);
-  margin-bottom: 20px;
-}
-.wherefore__title span {
   font-family: "Gotham-Bold";
   font-size: calc(30px + 10 * ((100vw - 320px) / 1180));
   color: var(--red-color);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.wherefore__title span {
+  font-family: "Gotham-Light";
+  font-size: calc(30px + 10 * ((100vw - 320px) / 1180));
+  font-weight: 300;
+  color: var(--red-color);
+  text-transform: uppercase;
 }
 .wherefore__row {
   margin-top: 60px;
@@ -339,4 +350,108 @@
   letter-spacing: normal;
   line-height: 30px;
   color: var(--dark-color);
+}
+
+.about {
+  padding: 135px 0;
+  background: url(../img/about-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+.about__desc {
+  position: relative;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 65px 20px;
+}
+.about__desc::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.5;
+  z-index: 1;
+}
+.about__text {
+  z-index: 5;
+}
+.about__text h4 {
+  margin: 0;
+  font-family: "Gotham-bold";
+  font-size: calc(28px + 12 * ((100vw - 320px) / 1180));
+  font-weight: 700;
+  letter-spacing: normal;
+  color: var(--white-color);
+  margin-bottom: 40px;
+}
+.about__text p {
+  font-family: "Gotham-Book";
+  font-size: calc(15px + 5 * ((100vw - 320px) / 1180));
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 30px;
+  opacity: 0.9;
+  margin-bottom: 40px;
+  color: var(--white-color);
+}
+.about__text button {
+  cursor: pointer;
+  font-family: "Gotham-Book";
+  font-size: calc(12px + 8 * ((100vw - 320px) / 1180));
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white-color);
+  padding: 22px 82px;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #21b6c7;
+}
+
+.footer {
+  padding: 50px 0;
+}
+.footer__content {
+  gap: 20px;
+}
+.footer__menu h5 {
+  margin: 0;
+  font-family: "Gotham-Bold";
+  font-size: calc(15px + 3 * ((100vw - 320px) / 1180));
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--red-color);
+  margin-bottom: 20px;
+}
+.footer__menu ul {
+  margin: 0;
+}
+.footer__menu ul li {
+  list-style: none;
+}
+.footer__menu ul li a {
+  font-family: "Gotham - Light";
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  color: var(--red-color);
+  opacity: 0.9;
+}
+.footer__menu-soc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 5px;
 }

@@ -20,6 +20,7 @@
         @include font-size(18, 15);
         font-weight: 400;
         text-transform: uppercase;
+        transition: .3s;
         color: var(--red-color);
     }
     &__burger {
